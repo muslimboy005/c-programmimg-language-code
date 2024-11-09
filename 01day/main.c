@@ -84,9 +84,7 @@ int main(){
 	scanf("%s", son1);
 	char son2[100];
 	scanf("%s", son2);
-	char natija[105];
-
-
+	
 	allNum(son1,son2);
 
 }
