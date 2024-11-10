@@ -5,7 +5,7 @@
 
 void natija(char result[]){
 	for (int i = strlen(result) - 1; i >= 0; i--){
-		printf("%c",result[i]);
+		printf("%d",result[i]-48);
 	}
 	puts("");
 }
@@ -84,7 +84,7 @@ int main(){
 	scanf("%s", son1);
 	char son2[100];
 	scanf("%s", son2);
-	
+
 	allNum(son1,son2);
 
 }
