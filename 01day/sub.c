@@ -7,27 +7,29 @@
 #include <stdlib.h>
 
 int main() {
+	//1
     srand(100);  
+    //2
     int random_num = rand();
     printf("Tasodifiy son: %d\n", random_num);
 
     char str[] = "12345";
+    //2
     int num = atoi(str); 
     printf("Konvertatsiya qilingan son: %d\n", num);
+    //3
+    int *arr = (int*)malloc(5 * sizeof(int)); 
 
-    int *arr = (int*)malloc(0 * sizeof(int)); 
-    if (arr == NULL) {
-        printf("Xotira ajratishda xatolik yuz berdi.\n");
-        return 1;
-    }
+    
     for (int i = 0; i < 5; i++) {
         arr[i] = i + 1;
     }
     for (int i = 0; i < 5; i++) {
         printf("%d ", arr[i]);
     }
+    //5
     printf("\n");
-    free(arr);  // Ajratilgan xotirani bo'shatish
+    free(arr); 
 
     return 0;
 }
